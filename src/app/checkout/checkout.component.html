@@ -1,0 +1,683 @@
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+<![endif]-->
+
+<!-- Main Wrapper Start Here -->
+<div class="wrapper">
+    <!-- Banner Popup Start -->
+    <div class="popup_banner">
+      <span class="popup_off_banner">×</span>
+      <div class="banner_popup_area">
+        <img src="assets/img/banner/pop-banner.jpg" alt="">
+      </div>
+    </div>
+    <!-- Banner Popup End -->
+    <!-- Newsletter Popup Start -->
+    <div class="popup_wrapper">
+      <div class="test">
+        <span class="popup_off">Thoát</span>
+        <div class="subscribe_area text-center mt-60">
+          <h2>Bản tin</h2>
+          <p>Theo dõi danh sách gửi thư Truemart để nhận thông tin cập nhật về hàng mới, ưu đãi đặc biệt và thông tin giảm giá khác.</p>
+          <div class="subscribe-form-group">
+            <form action="#">
+              <input autocomplete="off" type="text" name="message" id="message" placeholder="Enter your email address">
+              <button type="submit">Theo dõi</button>
+            </form>
+          </div>
+          <div class="subscribe-bottom mt-15">
+            <input type="checkbox" id="newsletter-permission">
+            <label for="newsletter-permission">Không hiển thị lại cửa sổ bật lên này</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Newsletter Popup End -->
+    <!-- Main Header Area Start Here -->
+    <header>
+      <!-- Header Top Start Here -->
+      <div class="header-top-area">
+        <div class="container">
+          <!-- Header Top Start -->
+          <div class="header-top">
+            <ul>
+              <li><a href="#"><strong>Miễn phí vận chuyển đơn hàng trên 30.000.000 VNĐ</strong></a></li>
+              <li><a href="#"><strong>Giỏ hàng</strong></a></li>
+              <li><a href="checkout.html"><strong>Thanh toán</strong></a></li>
+            </ul>
+            <ul>
+
+              <li>
+                <!--              <img style="width: 10%; height: 10%" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0NDQ0NDw0NDQ0NEA8NDQ0PDQ8NDg0NFREXFhURExMYHSggGBolGxUVITMhJSkrLi4uFx8zODMsNygtNSsBCgoKDg0OFxAQFy0dHx4rKy0rLS0tKy0rLS0tKystKy0tLSsrLSsrLSsrKy03LS0tLS0rLSs3KzctKysrKysrN//AABEIALIBGwMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAAAQUDBAYCB//EADYQAQACAQEGAwUHAgcAAAAAAAABAgMRBAUSITFRQXFyMlJhobEiM4GRwdHhYrITI0KCkqLw/8QAGAEBAQEBAQAAAAAAAAAAAAAAAAIDAQT/xAAcEQEBAQEBAAMBAAAAAAAAAAAAAQIRMQMhURL/2gAMAwEAAhEDEQA/APogD0sgAAAAAAAAAAAAAATSk2nSsTae0Rq28W681vCK+qf2ctkd40xb49zR/qyT5VjT5yjadh2fFXW03nXpHFGsz8OSf7jvFSAtIAAAAAAAAAAAAmEJgEAAAAAAAAAAAAA9Y6Ta0ViNZtOkAY8drzFaxMzPhC32XdFY0nJPFPuxyrHnPi29i2SuKukc7T7VvGZ/Zssdb/FzLzTHWsaVrFY7RGj0CFDV27Y4zRGszFq68M+HPvDaCXg5faNnvitw2jynwmPgxOoz4K5KzW0ax84nvDnts2a2K/DPOJ9m3eG2ddRYwALSAAAAAAAAAAJQmAQAAAAAAAAAAAAs9x4om17+7EVj8eqsXO4fZyeqPojfjs9WYkYtECQECQENXeWCL4rd6xxVn4w22PPzpf02+jsHLBA9DIAAAAAAAAAAShMAgAAAAAAAAAAABc7ij7F/V+imXW4vu7+v9IRvxWfVkJGK0CQECQEPGb2LemfoyPGb2LemfoDlYCB6WQAAAAAAAAAAlCQQAAAAAAAAAAAA6DdWz3x0tFo0mba9deWkOfl1eOdaxPeIn5M/kqsvQDJYAAAA8ZY1raO8THyewHKXx2pPDaNLR1h5be9J1z3+HDH/AFhqPRPGdAHXAAAAAAAABMITAIAAAAAAAAAAAAdJu/JxYcc/0xE+ccnNrLcmaYvOPXlaNYj+qP4RudisrsBisAAAAJGlvXPOPFOk6TaeGJ7dyTopdrvxZL28JtOnlqwkD0MgB0AAAAAAAAEoAAAAAAAAAAAAAGfYcnBlpaemuk+U8v1YByjrRX7q2z/ErwT7dY/5V7rBhZxqAOAAApd+Zdb1p7saz5z/AO+a12jNGOlrz0rHTv8ABzWTJN7Taetp1leJ99TqvADZAAAAAAAAAAAlCYBAAAAAAAAAAAAAALPcVf8AMvPasR+c/wALpWbmwWpxzas114dNY016rNhv1pPABLoADT3t9xf/AG/3Q550e88drYbVrEzM8OkR6oc7Macp5THKY7Nfj8RpADRIAAAAAAAAAAlAAAAAAAAAAAAAA2t24+LNTlrETxT+EfvowYsV7zpWs2n4Qut17FbFxWtpxW0jSJ10hOryOyLABg0AAAAHP73pw5pnTSLRFvPlpP0dA0t57JOWscOnFWeWvLWPGPorN5XLPpz4yZsF8fK1Zr9J/FjbswAAAAAAAAAAAAAAAAAAAAbezbvyZNJ04K+9b9IW2zbtx4+enHbvbn+UJu5HZFNs+xZcnSulfenlH8rTZ900rzvM3nt0qsRnd2rkeaUisaREREeERpD0CHQAAAAAAAETWJ5TGsdpaO0bqxW511pPw6fk3x2Wwc9tG7suPnpxx3rz+TTda19o2PHk9qvP3o5WXPk/U3LmhY7Tum9dZpPHHbpb+VfaJidJiYmOsTGktJZfE8QA64AAAAJQAAAAAAmImZiI6zyjzBk2fBbLbhrGvefCI7yu9j3djx6TP27956R5QzbHs0YqRWOvW097M7HWurkAEKAAAAAAAAAAAAAAAAGHaNmpkjS1de09Jj8WYBz23bBbDzj7VJ8fGPhLTdXkpFomsxrE8pj4OZ2rDOO9qduk948G2NdRYxALSAAJQkAQDqRACWXZPvcfrp/dAOXwjpwHnaAAAAAAAAAAAAAAAAAAAACj3397X0R9ZBePXNeK8QNkJEAJTCAH/9k=" alt="">-->
+                <a ><strong>Tài Khoản</strong><i class="lnr lnr-chevron-down"></i></a>
+                <!-- Dropdown Start -->
+                <ul class="ht-dropdown">
+                  <li *ngIf="!currentCustomer"><a  routerLink="login">Đăng nhập</a></li>
+                  <li *ngIf="!currentCustomer"><a  routerLink="register">Đăng Ký</a></li>
+                  <li><a routerLink="user-detail">Thông tin cá nhân</a></li>
+                  <li><a href="login.html">Lịch sử mua hàng</a></li>
+                  <li *ngIf="currentCustomer"><a  (click)="logOut()">Đăng xuất</a></li>
+                </ul>
+                <!-- Dropdown End -->
+              </li>
+            </ul>
+          </div>
+          <!-- Header Top End -->
+        </div>
+        <!-- Container End -->
+      </div>
+      <!-- Header Top End Here -->
+      <!-- Header Middle Start Here -->
+      <div class="header-middle ptb-15">
+        <div class="container">
+          <div class="row align-items-center no-gutters">
+            <div class="col-lg-3 col-md-12">
+              <div class="logo mb-all-30">
+                <a href="index.html"><img src="assets/img/logo/logo.png" alt="logo-image"></a>
+              </div>
+            </div>
+            <!-- Categorie Search Box Start Here -->
+            <div class="col-lg-5 col-md-8 ml-auto mr-auto col-10">
+              <div class="categorie-search-box">
+                <form action="#">
+
+                  <input type="text" name="search" placeholder="Bạn đang mua ...">
+                  <button><i class="lnr lnr-magnifier"></i></button>
+                </form>
+              </div>
+            </div>
+            <!-- Categorie Search Box End Here -->
+            <!-- Cart Box Start Here -->
+            <div class="col-lg-4 col-md-12">
+              <div class="cart-box mt-all-30">
+                <ul class="d-flex justify-content-lg-end justify-content-center align-items-center">
+                  <li><a href="#"><i class="lnr lnr-cart"></i><span class="my-cart"><span
+                    class="total-pro">{{items.length}}</span><span>Giỏ hàng</span></span></a>
+                    <ul class="ht-dropdown cart-box-width">
+                      <li>
+                        <!-- Cart Box Start -->
+                        <div class="single-cart-box" *ngFor="let item of items">
+                          <div class="cart-img">
+                            <a href="#"><img [src]="findImageURLFirst(item.product!.id)" alt="cart-image"></a>
+                            <span class="pro-quantity">{{item!.quantity}}</span>
+                          </div>
+                          <div class="cart-content">
+                            <h6><a href="product.html">{{item.product!.name}} </a></h6>
+                            <span class="cart-price">{{changePrice(item.product!.price)}}</span>
+                          </div>
+                          <a class="del-icone" href="#"><i class="ion-close" (click)="deleteItem(item!.id)"></i></a>
+                        </div>
+                        <!-- Cart Box End -->
+                        <!-- Cart Footer Inner Start -->
+                        <div class="cart-footer">
+                          <ul class="price-content">
+                            <li>Tổng tiền <span>{{changePrice(total)}}</span></li>
+                          </ul>
+                          <div class="cart-actions text-center">
+                            <a class="cart-checkout" routerLink="shopping-cart">Xem giỏ hàng</a>
+                          </div>
+                        </div>
+                        <!-- Cart Footer Inner End -->
+                      </li>
+                    </ul>
+                  </li>
+                  <!--                <li><a href="#"><i class="lnr lnr-heart"></i><span-->
+                  <!--                  class="my-cart"><span>Wish</span><span>list (0)</span></span></a>-->
+                  <!--                </li>-->
+                  <li><a href="#"><i class="lnr lnr-user"></i><span
+                    class="my-cart"><span style="text-align: center; font-weight: 500"> Xin chào</span><span><strong>{{username}}</strong></span></span></a>
+                    <!--                <li><a href="#"><i class="lnr lnr-heart"></i><span class="my-cart"><span>Danh sách</span><span>Yêu thích (0)</span></span></a>-->
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Cart Box End Here -->
+          </div>
+          <!-- Row End -->
+        </div>
+        <!-- Container End -->
+      </div>
+      <!-- Header Middle End Here -->
+      <!-- Header Bottom Start Here -->
+      <div class="header-bottom  header-sticky">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-xl-3 col-lg-4 col-md-6 vertical-menu d-none d-lg-block">
+              <span class="categorie-title">Danh mục sản phẩm</span>
+            </div>
+            <div class="col-xl-9 col-lg-8 col-md-12 ">
+              <nav class="d-none d-lg-block">
+                <ul class="header-bottom-list d-flex">
+                  <li class="active"><a href="index.html">Trang chủ</a>
+                  </li>
+                  <li><a href="shop.html">Mua Sắm</a>
+                  </li>
+                  <li *ngIf="roleSize != 1">
+                    <a routerLink="admin" >Quản lý cửa hàng</a>
+                  </li>
+
+                </ul>
+              </nav>
+              <div class="mobile-menu d-block d-lg-none">
+                <nav>
+                  <ul>
+                    <li><a href="#">Trang chủ</a>
+                    </li>
+                    <li><a href="shop.html">Mua sắm</a>
+                      <!-- Mobile Menu Dropdown Start -->
+                      <ul>
+                        <li><a href="product.html">product details</a></li>
+                        <li><a href="compare.html">compare</a></li>
+                        <li><a href="cart.html">cart</a></li>
+                        <li><a href="checkout.html">checkout</a></li>
+                        <li><a href="wishlist.html">wishlist</a></li>
+                      </ul>
+                      <!-- Mobile Menu Dropdown End -->
+                    </li>
+                    <li><a href="blog.html">Blog</a>
+                      <!-- Mobile Menu Dropdown Start -->
+                      <ul>
+                        <li><a href="single-blog.html">blog details</a></li>
+                      </ul>
+                      <!-- Mobile Menu Dropdown End -->
+                    </li>
+                    <li><a href="#">pages</a>
+                      <!-- Mobile Menu Dropdown Start -->
+                      <ul>
+                        <li><a href="register.html">register</a></li>
+                        <li><a href="login.html">sign in</a></li>
+                        <li><a href="forgot-password.html">forgot password</a></li>
+                        <li><a href="404.html">404</a></li>
+                      </ul>
+                      <!-- Mobile Menu Dropdown End -->
+                    </li>
+                    <li><a href="about.html">about us</a></li>
+                    <li><a routerLink="product">contact us</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <!-- Row End -->
+        </div>
+        <!-- Container End -->
+      </div>
+      <!-- Header Bottom End Here -->
+    </header>
+    <!-- Main Header Area End Here -->
+    <!-- Categorie Menu & Slider Area Start Here -->
+    <div class="main-page-banner home-3">
+      <div class="container">
+        <div class="row">
+          <!-- Vertical Menu Start Here -->
+          <div class="col-xl-3 col-lg-4 d-none d-lg-block">
+            <div class="vertical-menu mb-all-30">
+              <nav>
+                <ul class="vertical-menu-list">
+                  <li *ngFor="let categoryBrand of categoryBrands" class="">
+                    <a type="button" style="cursor: pointer"
+                       (click)="findProductByCategoryId(categoryBrand.category!.id)"><span><img
+                      src="assets/img/vertical-menu/1.png" alt="menu-icon">
+                  </span>{{categoryBrand.category!.name}}<i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </a>
+                    <ul class="ht-dropdown mega-child">
+                      <li *ngFor="let brand of categoryBrand.brands"><a style="cursor: pointer"
+                                                                        (click)="findAllProductByCategoryIdAndBrandId(categoryBrand.category!.id, brand.id)">{{brand!.name}}</a>
+                      </li>
+                    </ul>
+                    <!-- category submenu end-->
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <!-- Vertical Menu End Here -->
+        </div>
+        <!-- Row End -->
+      </div>
+      <!-- Container End -->
+    </div>
+    <!-- Categorie Menu & Slider Area End Here -->
+  <!-- Categorie Menu & Slider Area Start Here -->
+  <div class="main-page-banner home-3">
+    <div class="container">
+      <div class="row">
+        <!-- Vertical Menu Start Here -->
+        <div class="col-xl-3 col-lg-4 d-none d-lg-block">
+          <div class="vertical-menu mb-all-30">
+            <nav >
+              <ul class="vertical-menu-list"  >
+                <li *ngFor="let categoryBrand of categoryBrands" class="">
+                  <a type="button" style="cursor: pointer" (click)="findProductByCategoryId(categoryBrand.category!.id)" ><span><img src="assets/img/vertical-menu/1.png" alt="menu-icon">
+                  </span>{{categoryBrand.category!.name}}<i class="fa fa-angle-right" aria-hidden="true"></i>
+                  </a>
+                  <ul class="ht-dropdown mega-child" >
+                    <li *ngFor="let brand of categoryBrand.brands" ><a style="cursor: pointer"  (click)="findAllProductByCategoryIdAndBrandId(categoryBrand.category!.id, brand.id)">{{brand!.name}}</a>
+                    </li>
+                  </ul>
+                  <!-- category submenu end-->
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- Vertical Menu End Here -->
+      </div>
+      <!-- Row End -->
+    </div>
+    <!-- Container End -->
+  </div>
+  <!-- Categorie Menu & Slider Area End Here -->
+  <!-- Breadcrumb Start -->
+<!--  <div class="breadcrumb-area mt-30">-->
+<!--    <div class="container">-->
+<!--      <div class="breadcrumb">-->
+<!--        <ul class="d-flex align-items-center">-->
+<!--          <li><a href="index.html">Trang chủ</a></li>-->
+<!--          <li class="active"><a href="checkout.html">Thanh toán</a></li>-->
+<!--        </ul>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    &lt;!&ndash; Container End &ndash;&gt;-->
+<!--  </div>-->
+  <!-- Breadcrumb End -->
+  <!-- coupon-area start -->
+  <div class="coupon-area pt-30 pt-sm-60">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="coupon-accordion">
+            <!-- ACCORDION START -->
+            <h3 style="cursor: pointer" routerLink="/shopping-cart">Quay lại giỏ hàng</h3>
+            <!-- ACCORDION START -->
+<!--            <h3>Bạn đã có mã giảm giá? <span id="showcoupon">Click và đây để nhập !!!</span></h3>-->
+<!--            <div id="checkout_coupon" class="coupon-checkout-content">-->
+<!--              <div class="coupon-info">-->
+<!--                <form action="#">-->
+<!--                  <p class="checkout-coupon">-->
+<!--                    <input type="text" class="code" placeholder="Coupon code" />-->
+<!--                    <input type="submit" value="Apply Coupon" />-->
+<!--                  </p>-->
+<!--                </form>-->
+<!--              </div>-->
+<!--            </div>-->
+            <!-- ACCORDION END -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- coupon-area end -->
+  <!-- checkout-area start -->
+  <div class="checkout-area pb-100 pt-15 pb-sm-60">
+    <div class="container">
+      <div class="row"  *ngIf="currentCustomer != null">
+        <div class="col-lg-6 col-md-6">
+          <div class="checkbox-form mb-sm-40">
+            <h3><strong>Thông tin người nhận</strong></h3>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="checkout-form-list mb-sm-30">
+                  <label>Họ và tên <span class="required">*</span></label>
+                  <input type="text" readonly *ngIf="currentCustomer != null" value="{{currentCustomer!.name}}" placeholder="" />
+                </div>
+              </div>
+              <div class="col-md-12" style="margin-top: 10px">
+                <div class="checkout-form-list">
+                  <label>Địa chỉ nhận hàng <span class="required">*</span></label>
+                  <input type="text" readonly *ngIf="currentCustomer != null" value="{{currentCustomer!.address}}" placeholder="Địa chỉ ..." />
+                </div>
+              </div>
+              <div class="col-md-12" style="margin-top: 10px">
+                <div class="checkout-form-list">
+                  <label>Địa chỉ Email <span class="required">*</span></label>
+                  <input type="email" readonly *ngIf="currentCustomer != null" value="{{currentCustomer!.emailAddress}}" placeholder="abc@gmail.com" />
+                </div>
+              </div>
+                <div class="col-md-12" style="margin-top: 10px">
+                <div class="checkout-form-list">
+                  <label>Số điện thoại <span class="required">*</span></label>
+                  <input type="text" *ngIf="currentCustomer != null" readonly value="{{currentCustomer!.phoneNumber}}" placeholder="03444xxxx" />
+                </div>
+              </div>
+            </div>
+            <div class="different-address" style="margin-top: 15px">
+              <div class="ship-different-title">
+                <h3>
+                  <label>Lời nhắn</label>
+                  <input id="ship-box" type="checkbox" />
+                </h3>
+              </div>
+              <div id="ship-box-info" style="margin-top: 10px">
+                <div class="order-notes">
+                  <div class="checkout-form-list">
+                    <label>Ghi chú</label>
+                    <textarea id="checkout-mess" cols="30" rows="10" placeholder="Ghi chú về đơn đặt hàng của bạn, ví dụ: lưu ý đặc biệt để giao hàng."></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="coupon-accordion" style="margin-top: 15px">
+              <!-- ACCORDION START -->
+              <h3>Bạn đã có mã giảm giá? <span id="showcoupon">Click và đây để nhập !!!</span></h3>
+              <div id="checkout_coupon" class="coupon-checkout-content">
+                <div class="coupon-info">
+                  <form action="#">
+                    <p class="checkout-coupon">
+                      <input type="text" class="code" placeholder="Mã giảm giá" />
+                      <input type="submit" value="Áp Dụng" />
+                    </p>
+                  </form>
+                </div>
+              </div>
+              <!-- ACCORDION END -->
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6">
+          <div class="your-order">
+            <h3>Đơn hàng</h3>
+            <div class="your-order-table table-responsive">
+              <table>
+                <thead>
+                <tr>
+                  <th class="product-name">Sản phẩm</th>
+                  <th class="product-total">Tổng tiền</th>
+                </tr>
+                </thead>
+                <tbody *ngFor="let dtoItem of findItemByShopId()">
+                <tr class="cart_item">
+                  <td class="product-name">
+                    {{dtoItem.item!.product!.name}}  <span class="product-quantity"> × {{dtoItem.item!.quantity}}</span>
+                  </td>
+                  <td class="product-total">
+                    <span class="amount">{{changePrice(getTotalItem(dtoItem.item!.id))}}</span>
+                  </td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr class="cart-subtotal">
+                  <th>Tổng tiền giỏ hàng</th>
+                  <td><span class="amount">{{changePrice(subtotalMoney())}}</span></td>
+                </tr>
+
+                <tr class="cart-subtotal">
+                  <th>Giảm giá</th>
+                  <td><span class="amount">{{discountAutomatic(subtotalMoney())}}%</span></td>
+                </tr>
+
+                <tr class="cart-subtotal">
+                  <th>Voucher</th>
+                  <td><span class="amount">{{voucherItem}}%</span></td>
+                </tr>
+
+                <tr class="order-total">
+                  <th>Tổng tiền đơn hàng</th>
+                  <td><span class=" total amount">{{changePrice(totalMoney())}}</span>
+                  </td>
+                </tr>
+                </tfoot>
+              </table>
+            </div>
+            <div class="payment-method">
+              <div id="accordion">
+                <div class="card">
+                  <div class="card-header" id="headingone">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Chuyển khoản trực tiếp
+                      </button>
+                    </h5>
+                  </div>
+
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingone" data-parent="#accordion">
+                    <div class="card-body">
+                      <p>Thực hiện thanh toán của bạn trực tiếp vào tài khoản ngân hàng của chúng tôi. Vui lòng sử dụng ID đơn đặt hàng của bạn làm tham chiếu thanh toán. Đơn đặt hàng của bạn sẽ không được giao cho đến khi tiền đã hết trong tài khoản của chúng tôi.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingtwo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Thanh toán séc
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingtwo" data-parent="#accordion">
+                    <div class="card-body">
+                      <p>Vui lòng gửi séc của bạn đến Tên cửa hàng, Phố cửa hàng, Thị trấn cửa hàng, Bang / Hạt cửa hàng, Mã bưu điện cửa hàng.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingthree">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        PayPal
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingthree" data-parent="#accordion">
+                    <div class="card-body">
+                      <p>Thanh toán qua PayPal; bạn có thể thanh toán bằng thẻ tín dụng của mình nếu bạn không có tài khoản PayPal.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <div class="buttons-cart" style="margin-top: 15px; margin-left: 315px">
+                <a class="checkout-btn-css" style="margin-left: 10px; background-color: black; color: white; cursor: pointer;"  (click)="createOrder()">Tiến hành đặt hàng</a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" *ngIf="currentCustomer == null">
+        <h2 style="margin-left: 40%"><strong style="color: red; text-transform: capitalize; text-align: center">Bạn cần phải đăng nhập !!!</strong> </h2>
+      </div>
+    </div>
+  </div>
+  <!-- checkout-area end -->
+  <!-- Support Area Start Here -->
+  <div class="support-area bdr-top">
+    <div class="container">
+      <div class="d-flex flex-wrap text-center">
+        <div class="single-support">
+          <div class="support-icon">
+            <i class="lnr lnr-gift"></i>
+          </div>
+          <div class="support-desc">
+            <h6>Giá trị</h6>
+            <span>Sản phẩm được gửi tới bạn là sản phẩm <strong>vô cùng giá trị.</strong></span>
+          </div>
+        </div>
+        <div class="single-support">
+          <div class="support-icon">
+            <i class="lnr lnr-rocket" ></i>
+          </div>
+          <div class="support-desc">
+            <h6>Vận chuyển</h6>
+            <span>Đơn hàng luôn được vận chuyển một cách <strong> an toàn.</strong></span>
+          </div>
+        </div>
+        <div class="single-support">
+          <div class="support-icon">
+            <i class="lnr lnr-lock"></i>
+          </div>
+          <div class="support-desc">
+            <h6>Thanh toán</h6>
+            <span>Thanh toán nhanh chóng và an toàn.</span>
+          </div>
+        </div>
+        <div class="single-support">
+          <div class="support-icon">
+            <i class="lnr lnr-enter-down"></i>
+          </div>
+          <div class="support-desc">
+            <h6>Uy tín</h6>
+            <span>Phương châm <strong>Chữ tín quý hơn vàng.</strong></span>
+          </div>
+        </div>
+        <div class="single-support">
+          <div class="support-icon">
+            <i class="lnr lnr-users"></i>
+          </div>
+          <div class="support-desc">
+            <h6>24/7 Hỗ trợ</h6>
+            <span>Luôn sẵn sàng hỗ trợ và giải đáp thắc mắc <strong> 24/7.</strong></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Container End -->
+  </div>
+  <!-- Support Area End Here -->
+  <!-- Footer Area Start Here -->
+  <footer class="off-white-bg2 pt-95 bdr-top pt-sm-55">
+    <!-- Footer Top Start -->
+    <div class="footer-top">
+      <div class="container">
+        <!-- Signup Newsletter Start -->
+        <div class="row mb-60">
+          <div class="col-xl-7 col-lg-7 ml-auto mr-auto col-md-8">
+            <div class="news-desc text-center mb-30">
+              <h3>Đăng Ký Để Nhận Thông Tin Mới NHất</h3>
+              <p>Hãy là người đầu tiên biết. Đăng ký nhận bản tin ngay hôm nay</p>
+            </div>
+            <div class="newsletter-box">
+              <form action="#">
+                <input class="subscribe" placeholder="Nhập địa chỉ Email của bạn.." name="email" id="subscribe" type="text">
+                <button type="submit" class="submit">Theo dõi!</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- Signup-Newsletter End -->
+        <div class="row">
+          <!-- Single Footer Start -->
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="single-footer mb-sm-40">
+              <h3 class="footer-title"><strong>Thông Tin</strong></h3>
+              <div class="footer-content">
+                <ul class="footer-list">
+                  <li><a href="about.html">Về Chúng Tôi</a></li>
+                  <li><a href="#">Thông Tin Vận Chuyển</a></li>
+                  <li><a href="#">Chính Sách Bảo mật</a></li>
+                  <li><a href="contact.html">Điều Khoản & Điều Kiện</a></li>
+                  <li><a href="login.html">FAQs</a></li>
+                  <li><a href="login.html">Phản Hồi</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Single Footer Start -->
+          <!-- Single Footer Start -->
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="single-footer mb-sm-40">
+              <h3 class="footer-title"><strong>Chăm Sóc Khách Hàng</strong></h3>
+              <div class="footer-content">
+                <ul class="footer-list">
+                  <li><a href="contact.html">Kết nối với chúng tôi</a></li>
+                  <li><a href="#">Lợi Nhuận</a></li>
+                  <li><a href="#">Lịch Sử Đặt Hàng</a></li>
+                  <li><a href="wishlist.html">Mục Yêu Thích</a></li>
+                  <li><a href="#">Địa Chỉ</a></li>
+                  <li><a href="#">Phiếu Quà Tặng</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Single Footer Start -->
+          <!-- Single Footer Start -->
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="single-footer mb-sm-40">
+              <h3 class="footer-title"><strong>Bổ Sung</strong></h3>
+              <div class="footer-content">
+                <ul class="footer-list">
+                  <li><a href="#">Thông tin</a></li>
+                  <li><a href="#">Thương Hiệu</a></li>
+                  <li><a href="#">Phiếu Quà Tặng</a></li>
+                  <li><a href="#">Chi Nhánh</a></li>
+                  <li><a href="#">Đặc Biệt</a></li>
+                  <li><a href="#">Địa Chỉ</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Single Footer Start -->
+          <!-- Single Footer Start -->
+          <div class="col-lg-2 col-md-4 col-sm-6">
+            <div class="single-footer mb-sm-40">
+              <h3 class="footer-title"><strong>Tài khoản của tôi</strong></h3>
+              <div class="footer-content">
+                <ul class="footer-list">
+                  <li><a href="contact.html">Kết nối</a></li>
+                  <li><a href="#">Lợi Nhuận</a></li>
+                  <li><a href="#">Tài khoản của tôi</a></li>
+                  <li><a href="#">Lịch Sử Đặt Hàng</a></li>
+                  <li><a href="wishlist.html">Mục Yêu Thích</a></li>
+                  <li><a href="#">Thông Tin</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Single Footer Start -->
+          <!-- Single Footer Start -->
+          <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="single-footer mb-sm-40">
+              <h3 class="footer-title">Tài khoản của tôi</h3>
+              <div class="footer-content">
+                <ul class="footer-list address-content">
+                  <li><i class="lnr lnr-map-marker"></i> Address: 169-C, Technohub, Dubai Silicon Oasis.</li>
+                  <li><i class="lnr lnr-envelope"></i><a href="#"> mail Us: Support@truemart.com </a></li>
+                  <li>
+                    <i class="lnr lnr-phone-handset"></i> Phone: (+800) 123 456 789)
+                  </li>
+                </ul>
+                <div class="payment mt-25 bdr-top pt-30">
+                  <a href="#"><img class="img"  src="assets/img/payment/1.png" alt="payment-image"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Single Footer Start -->
+        </div>
+        <!-- Row End -->
+      </div>
+      <!-- Container End -->
+    </div>
+    <!-- Footer Top End -->
+    <!-- Footer Middle Start -->
+    <div class="footer-middle text-center">
+      <div class="container">
+        <div class="footer-middle-content pt-20 pb-30">
+          <ul class="social-footer">
+            <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://plus.google.com/"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><img  src="assets/img/icon/social-img1.png" alt="google play"></a></li>
+            <li><a href="#"><img  src="assets/img/icon/social-img2.png" alt="app store"></a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Container End -->
+    </div>
+    <!-- Footer Middle End -->
+    <!-- Footer Bottom Start -->
+    <div class="footer-bottom pb-30">
+      <div class="container">
+
+        <div class="copyright-text text-center">
+          <p>Copyright © 2018 <a target="_blank" href="#">Truemart</a> All Rights Reserved.</p>
+        </div>
+      </div>
+      <!-- Container End -->
+    </div>
+    <!-- Footer Bottom End -->
+  </footer>
+  <!-- Footer Area End Here -->
+</div>
+<!-- Main Wrapper End Here -->

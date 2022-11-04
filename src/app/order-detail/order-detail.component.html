@@ -1,0 +1,31 @@
+<h2 mat-dialog-title>Chi tiết đơn hàng</h2>
+<mat-dialog-content class="mat-typography">
+  <table class="table">
+    <thead>
+    <tr>
+      <th scope="col">STT</th>
+      <th scope="col" colspan="2">Tên sản phẩm</th>
+      <th scope="col">Số lượng</th>
+      <th scope="col">Màu sắc</th>
+      <th scope="col">Ảnh</th>
+      <th scope="col">Giá tiền</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let orderDetail of listOrderDetail">
+      <th scope="row">{{orderDetail.id}}</th>
+      <td colspan="2">{{orderDetail.product!.name}}</td>
+      <td>{{orderDetail.quantity}}</td>
+      <td>{{orderDetail.product!.color}}</td>
+      <td width="200px"><img style="width: 50%; height: 50%" [src]="findImg(orderDetail.product!.id)"></td>
+      <td>{{changePrice(orderDetail.product!.price)}}</td>
+    </tr>
+    <tr>
+      <td colspan="7" style="text-align: center;"><span>Tổng tiền hóa đơn: <strong>{{changePrice(total)}}</strong></span></td>
+    </tr>
+    </tbody>
+  </table>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button [mat-dialog-close]="true" cdkFocusInitial (click)="clear()">Thoát</button>
+</mat-dialog-actions>

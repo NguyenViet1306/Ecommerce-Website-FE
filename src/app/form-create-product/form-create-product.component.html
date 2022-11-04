@@ -1,0 +1,68 @@
+<h2 mat-dialog-title>Đăng bán sản phẩm</h2>
+<mat-dialog-content class="mat-typography">
+  <!---->
+ <form [formGroup]="productForm">
+   <mat-form-field appearance="outline" width="500px" >
+     <mat-label>Tên sản phẩm</mat-label>
+     <input matInput placeholder="Placeholder" formControlName="name" id="name" >
+     <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+   </mat-form-field>
+   <mat-form-field appearance="outline" >
+     <mat-label>Giá sản phẩm</mat-label>
+     <input matInput placeholder="Placeholder" formControlName="price">
+     <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+   </mat-form-field>
+
+   <mat-form-field appearance="outline" >
+     <mat-label>Số lượng bán</mat-label>
+     <input  matInput placeholder="Placeholder" formControlName="amount" id="amount">
+     <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+   </mat-form-field>
+
+   <mat-form-field appearance="outline" >
+     <mat-label>Màu sắc</mat-label>
+     <input matInput placeholder="Placeholder" formControlName="color">
+     <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+   </mat-form-field>
+
+   <mat-form-field appearance="outline">
+     <mat-label>Mô tả</mat-label>
+     <textarea matInput placeholder="Description" formControlName="description"></textarea>
+     <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+   </mat-form-field>
+
+   <mat-form-field appearance="outline" >
+     <mat-label>Giảm giá</mat-label>
+     <input matInput placeholder="Placeholder" formControlName="discount">
+     <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+   </mat-form-field>
+
+   <mat-form-field appearance="outline">
+     <mat-label>Thể loại</mat-label>
+     <mat-select formControlName="category" id="category_id" (ngModelChange)="findBrandByCategory()">
+       <mat-option *ngFor="let category of categories" [value] = "category.id">{{category.name}}</mat-option>
+     </mat-select>
+   </mat-form-field>
+   <mat-form-field appearance="outline">
+     <mat-label>Thương hiệu</mat-label>
+     <mat-select formControlName="brand">
+       <mat-option *ngFor="let brand of listBrandByCategory" [value]="brand.id">{{brand.name}}</mat-option>
+     </mat-select>
+   </mat-form-field>
+   <div class="custom-file">
+     <input type="file" id="file" #userPhoto multiple
+            (change)="showPreview($event)" name="image" autocomplete="off" class="custom-file-input"
+            id = "inputGroupFile01">
+     <label for="inputGroupFile01" class="custom-file-label-1">Chọn ảnh</label>
+
+   </div>
+   <img *ngFor="let url of listURL" src="{{url}}" width="20%" height="20%" style="margin-left: 20px" alt="Error">
+ </form>
+
+  <!---->
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Hủy</button>
+  <button mat-button [mat-dialog-close]="true" mat-stroked-button color="primary" (click)="saveProduct()" cdkFocusInitial>{{actionBtn}}</button>
+</mat-dialog-actions>

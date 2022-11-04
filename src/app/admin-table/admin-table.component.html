@@ -1,0 +1,316 @@
+<!-- Page Wrapper -->
+<div id="wrapper">
+
+  <!-- Sidebar -->
+  <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+    <!-- Sidebar - Brand -->
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+      <div class="sidebar-brand-icon rotate-n-15">
+        <i class="fas fa-laugh-wink"></i>
+      </div>
+      <div class="sidebar-brand-text mx-3">Quản lý cửa hàng</div>
+    </a>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider my-0">
+
+    <!-- Nav Item - Bảng điều khiển -->
+    <li class="nav-item active">
+      <a class="nav-link" href="index.html">
+        <i class="fas fa-fw fa-tachometer-alt"></i>
+        <span>Bảng điều khiến</span></a>
+    </li>
+
+
+    <!-- Nav Item - Utilities Collapse Menu -->
+
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+
+    <!-- Heading -->
+    <div class="sidebar-heading">
+      Quản lý
+    </div>
+
+    <!-- Nav Item - Pages Collapse Menu -->
+    <li class="nav-item">
+      <a class="nav-link collapsed" routerLink="/admin" data-toggle="collapse" data-target="#collapsePages"
+         aria-expanded="true" aria-controls="collapsePages">
+        <i class="fas fa-fw fa-folder"></i>
+        <span>Pages</span>
+      </a>
+      <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+        <!--        <div class="bg-white py-2 collapse-inner rounded">-->
+        <!--          <h6 class="collapse-header">Login Screens:</h6>-->
+        <!--          <a class="collapse-item" href="login.html">Login</a>-->
+        <!--          <a class="collapse-item" href="register.html">Register</a>-->
+        <!--          <a class="collapse-item" href="forgot-password.html">Forgot Password</a>-->
+        <!--          <div class="collapse-divider"></div>-->
+        <!--          <h6 class="collapse-header">Other Pages:</h6>-->
+        <!--          <a class="collapse-item" href="404.html">404 Page</a>-->
+        <!--          <a class="collapse-item" href="blank.html">Blank Page</a>-->
+        <!--        </div>-->
+      </div>
+    </li>
+
+    <!-- Nav Item - Charts -->
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/order-shop">
+        <i class="fas fa-fw fa-chart-area"></i>
+        <span>Đơn hàng</span></a>
+    </li>
+
+    <!-- Nav Item - Tables -->
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/admin-table">
+        <i class="fas fa-fw fa-table"></i>
+        <span>Sản phẩm</span></a>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider d-none d-md-block">
+
+    <!-- Sidebar Toggler (Sidebar) -->
+    <div class="text-center d-none d-md-inline">
+      <button class="rounded-circle border-0" id="sidebarToggle"></button>
+    </div>
+
+    <!-- Sidebar Message -->
+
+  </ul>
+  <!-- End of Sidebar -->
+
+  <!-- Content Wrapper -->
+  <div id="content-wrapper" class="d-flex flex-column">
+
+    <!-- Main Content -->
+    <div id="content">
+
+      <!-- Topbar -->
+      <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+        <!-- Sidebar Toggle (Topbar) -->
+        <form class="form-inline">
+          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+            <i class="fa fa-bars"></i>
+          </button>
+        </form>
+
+        <!-- Topbar Search -->
+        <form
+          class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+          <div class="input-group">
+            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                   aria-label="Search" aria-describedby="basic-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-primary" type="button">
+                <i class="fas fa-search fa-sm"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+
+        <!-- Topbar Navbar -->
+        <ul class="navbar-nav ml-auto">
+
+          <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+          <li class="nav-item dropdown no-arrow d-sm-none">
+            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-search fa-fw"></i>
+            </a>
+            <!-- Dropdown - Messages -->
+            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                 aria-labelledby="searchDropdown">
+              <form class="form-inline mr-auto w-100 navbar-search">
+                <div class="input-group">
+                  <input type="text" class="form-control bg-light border-0 small"
+                         placeholder="Search for..." aria-label="Search"
+                         aria-describedby="basic-addon2">
+                  <div class="input-group-append">
+                    <button class="btn btn-primary" type="button">
+                      <i class="fas fa-search fa-sm"></i>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </li>
+
+          <!-- Nav Item - Alerts -->
+
+          <!-- Nav Item - Messages -->
+          <li class="nav-item dropdown no-arrow mx-1">
+
+            <div class="topbar-divider d-none d-sm-block"></div>
+
+            <!-- Nav Item - User Information -->
+          <li class="nav-item dropdown no-arrow">
+            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="mr-2 d-none d-lg-inline text-gray-600 small">{{username}}</span>
+              <img class="img-profile rounded-circle"
+                   src="assets/admin/img/undraw_profile.svg">
+            </a>
+            <!-- Dropdown - User Information -->
+            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                 aria-labelledby="userDropdown">
+              <a class="dropdown-item" href="#">
+                <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                Thông tin cá nhân
+              </a>
+              <a class="dropdown-item" href="#">
+                <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                Lịch sử mua hàng
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                Đăng xuất
+              </a>
+            </div>
+          </li>
+
+        </ul>
+
+      </nav>
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+           aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Modal create-->
+      <!-- Begin Page Content -->
+      <div class="container-fluid">
+
+        <!-- Page Heading -->
+        <!-- DataTales Example -->
+        <div class="card shadow mb-4">
+          <div class="card-header py-3" style="display: flex; justify-content: space-between;align-items: center;">
+            <h4 class="m-0 font-weight-bold text-primary">Danh sách sản phẩm</h4>
+            <h4 style="margin-top: 15px">
+              <button mat-button (click)="openDialog()" mat-flat-button color="warn">Đăng bán sản phẩm</button>
+            </h4>
+
+            <!--              <button type="submit" class="btn btn-primary" data-toggle="modal" (click)="openModal()">Create New Product</button>-->
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <div class="mat-elevation-z8">
+                <table mat-table [dataSource]="listProduct" matSort>
+                  <!-- Position Column -->
+                  <ng-container matColumnDef="stt">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header> STT</th>
+                    <td mat-cell *matCellDef="let i = index"> {{i + 1}} </td>
+                  </ng-container>
+                  <!-- Name Column -->
+                  <ng-container matColumnDef="name">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Tên sản phẩm</th>
+                    <td mat-cell style="width: 400px;" *matCellDef="let element"> {{element.product.name}} </td>
+                  </ng-container>
+
+                  <!-- Price Column -->
+                  <ng-container matColumnDef="price">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Đơn giá</th>
+                    <td mat-cell *matCellDef="let element"> {{element.product.price}} </td>
+                  </ng-container>
+
+                  <!-- Amount Column -->
+                  <ng-container matColumnDef="amount">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Số lượng</th>
+                    <td mat-cell *matCellDef="let element"> {{element.product.amount}} </td>
+                  </ng-container>
+
+                  <!-- Color Column -->
+                  <ng-container matColumnDef="color">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Màu sắc</th>
+                    <td mat-cell *matCellDef="let element"> {{element.product.color}} </td>
+                  </ng-container>
+
+
+                  <!-- Image Column -->
+                  <ng-container matColumnDef="image">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Ảnh</th>
+                    <td mat-cell style="height: 200px; width: 200px" *matCellDef="let element"><img width="50%"
+                                                                                                    height="50%"
+                                                                                                    [src]="element.imageURLS[0]">
+                    </td>
+                  </ng-container>
+
+                  <!-- Edit Column -->
+                  <ng-container matColumnDef="edit">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header>Sửa</th>
+                    <td mat-cell *matCellDef="let element">
+                      <a style="cursor: pointer">
+                        <mat-icon (click)="getProductUpdate(element.product.id)">edit</mat-icon>
+                      </a></td>
+                  </ng-container>
+
+                  <!-- Edit Column -->
+                  <ng-container matColumnDef="delete">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header>Xóa</th>
+                    <td mat-cell *matCellDef="let element"><a style="cursor: pointer"
+                                                              (click)="deleteProduct(element.product.id)">
+                      <mat-icon>delete</mat-icon>
+                    </a></td>
+                  </ng-container>
+
+                  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                </table>
+
+                <mat-paginator [pageSizeOptions]="[5, 10, 20]"
+                               showFirstLastButtons
+                               aria-label="Select page of periodic elements">
+                </mat-paginator>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Dialog -->
+
+        <!-- Dialog -->
+      </div>
+      <!-- /.container-fluid -->
+
+    </div>
+    <!-- End of Main Content -->
+
+    <!-- Footer -->
+    <footer class="sticky-footer bg-white">
+      <div class="container my-auto">
+        <div class="copyright text-center my-auto">
+          <span>Copyright &copy; Your Website 2020</span>
+        </div>
+      </div>
+    </footer>
+    <!-- End of Footer -->
+
+  </div>
+  <!-- End of Content Wrapper -->
+
+</div>
+<!-- End of Page Wrapper -->
+
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded" href="#page-top">
+  <i class="fas fa-angle-up"></i>
+</a>
